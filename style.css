@@ -1,3 +1,5 @@
+/* Tag Styles */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -14,13 +16,28 @@ h1 {
 } */
 
 input {
-    width: 100%;
+    width: auto;
     padding: 8px;
     margin-bottom: 8px;
 }
 
+button {
+    width: 80px;
+    padding: 8px;
+}
+
+
+/* Generic Class styles */
 .container {
-    max-width: 800px;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-container {
+    max-width: 900px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
@@ -29,21 +46,16 @@ input {
 
 .form-group {
     margin-bottom: 12px;
-    background-color: aliceblue;
 }
 
 .in::placeholder{
     color:rgba(142, 142, 142, 0.81);
 }
 
-.table-container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
+
+
+/* Table styles */
 table {
     width: 100%;
     border-collapse: collapse;

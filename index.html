@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
     <title>Salary Calc</title>
 </head>
 <body>
@@ -12,11 +12,12 @@
     <div class="container">
         <h2>Add Employee:</h2>
         <div class="form-group">
-            <input id="fName"class="in" placeholder="First Name">
-            <input id="lName" class="in" placeholder="Last Name"> 
-            <input id="ID" class="in" placeholder="ID">
-            <input id="Title" class="in" placeholder="Title">
-            <input id="AnSal" class="in" placeholder="Annual Salary">
+            <input id="f-Name"class="in" placeholder="First Name">
+            <input id="l-Name" class="in" placeholder="Last Name"> 
+            <input id="id" class="in" placeholder="ID">
+            <input id="title" class="in" placeholder="Title">
+            <input id="an-sal" class="in" placeholder="Annual Salary">
+            <button id="submit-btn" onClick="grabValues(event)">Submit</button>
         </div>
     </div>
     <div class="table-container">
