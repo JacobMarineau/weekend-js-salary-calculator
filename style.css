@@ -52,6 +52,21 @@ button {
     color:rgba(142, 142, 142, 0.81);
 }
 
+.remButt {
+    display: block; 
+    margin: 0 auto; 
+    padding: 8px;
+    border: none;
+    background-color: #e3e3e3;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.remButt:hover {
+    border-radius: 4px;
+    background-color: #f32d2d;
+}
+
 
 
 
@@ -59,14 +74,22 @@ button {
 table {
     width: 100%;
     border-collapse: collapse;
+    text-align: center;
 }
+
+td {
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: left;  
+}
+
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: left;
 }
 th {
     background-color: #f4f4f4;
+    text-align: left;
 }
 tr:nth-child(even) {
     background-color: #f9f9f9;

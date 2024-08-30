@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("submit-btn").addEventListener("click", grabValues);
+});
+
 function grabValues(event) {
   event.preventDefault();
   const fName = document.getElementById("f-Name").value;
@@ -8,7 +12,7 @@ function grabValues(event) {
 
   const tbody = document.getElementById("t-body");
   const newT = document.createElement("tr");
-  newT.classList.add("t-body");
+  newT.classList.add("tdata");
   tbody.appendChild(newT);
   newT.innerHTML = `  
   <td>${fName}</td>
@@ -16,5 +20,12 @@ function grabValues(event) {
    <td>${id}</td>
     <td>${title}</td>
      <td>${salary}</td>
+     <td>
+     <button class="remButt" onClick="removeRow(event)">Remove</button>
+     </td>
       `;
+}
+
+function removeRow(event) {
+  event.target.closest(".tdata").remove();
 }
