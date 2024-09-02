@@ -27,5 +27,28 @@ function grabValues(event) {
 }
 
 function removeRow(event) {
-  event.target.closest(".tdata").remove();
+  const row = event.target.closest(".tdata");
+  const salaryPosition = row.children[4];
+  const salary = salaryPosition.textContent;
+
+  subtractSalaries(salary);
+  row.remove();
+}
+let totalSalaries = 0;
+function addSalaries() {
+  const salary = document.getElementById("an-sal").value;
+  const display = document.getElementById("h-three");
+  const salaries = parseInt(salary);
+  if (!isNaN(salaries)) {
+    totalSalaries += salaries;
+  }
+  display.innerText = `Total Salaries: $${totalSalaries.toFixed(2)}`;
+}
+function subtractSalaries(salary) {
+  const display = document.getElementById("h-three");
+  const salaries = parseInt(salary);
+  if (!isNaN(salaries)) {
+    totalSalaries -= salaries;
+  }
+  display.innerText = `Total Salaries: $${totalSalaries.toFixed(2)}`;
 }

@@ -16,8 +16,8 @@
             <input id="l-Name" class="in" placeholder="Last Name"> 
             <input id="id" class="in" placeholder="ID">
             <input id="title" class="in" placeholder="Title">
-            <input id="an-sal" class="in" placeholder="Annual Salary">
-            <button id="submit-btn">Submit</button>
+            <input id="an-sal" class="in" placeholder="Annual Salary" type="number">
+            <button id="submit-btn" onClick="addSalaries()">Submit</button>
         </div>
     </div>
     <div class="table-container">
@@ -36,10 +36,11 @@
             <tbody id="t-body">
             </tbody>
         </table>
+        <div id="mon-sal">
+            <h3 id="h-three"></h3>
+        </div>
 
     </div>
-    <div id="mon-sal">
-        <h3 id="h-three"></h3>
-    </div>
+    
 </body>
 </html>
