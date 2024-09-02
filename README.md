@@ -23,8 +23,12 @@ Grabs the values from the input forms then appends that inputted data to the tab
 
 function removeRow()
 Passes in the click event to find which row was clicked than deletes that row
+Also runs the subtract function to remove the added on salary
 
 function addSalaries()
 Grabs the salary value, checks if its a !NaN then changes the h3 in the HTML to reflect the newly added amount
+
+function subtractSalaries()
+Grabs the salary value of the deleted row than checks if its a !NaN than changes the h3 in the HTML to reflect the newly subtracted amount
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
